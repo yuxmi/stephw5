@@ -1,7 +1,7 @@
 def read_input(filename):
     cities = []
     with open(filename) as f:
-        for data in f.read().splitlines():
+        for data in f.readlines()[1:]:
             x = float(data.split(',')[0])
             y = float(data.split(',')[1])
             coord = (x,y)
